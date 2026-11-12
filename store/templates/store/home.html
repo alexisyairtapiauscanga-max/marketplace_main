@@ -113,7 +113,7 @@
             <!-- Footer de la Tarjeta (Botones) -->
             <div class="p-6 pt-0 flex flex-col gap-3">
                 {% if user.is_authenticated %}
-                    <a href="#" class="w-full text-center px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white font-semibold rounded-full shadow-lg shadow-slate-900/20 transition-all hover:-translate-y-0.5">
+                    <a href="{%  url 'add_to_cart' product.id %}" class="w-full text-center px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white font-semibold rounded-full shadow-lg shadow-slate-900/20 transition-all hover:-translate-y-0.5">
                         Agregar al carrito
                     </a>
                 {% endif %}
